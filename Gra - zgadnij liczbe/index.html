@@ -11,14 +11,20 @@
 </head>
 
 <body>
+	
 	<div class="pole">
-
-		<p class="opis">Zgadnij liczbę z przedziału od 1 do 15</p>
+		<p class="opis">Wybierz zakres liczb do gry:</p>
+		<div id="zakres">
+			<button id="range1" class="styl">1 do 10</button>
+			<button id="range2" class="styl">1 do 15</button>
+			<button id="range3" class="styl">1 do 20</button>
+		</div>
+			<p class="opis">Zgadnij liczbę z przedziału: <span id="range"> - - - </span></p>
 		<div class="pomoc">
 			<input id="value">
-			<button id="send">Wyślij</button>
+			<button id="send" class="styl">Wyślij</button>
 		</div>
-		<p id="opis">- - -</p>
+		<p id="opis" class="opis">- - -</p>
 		<div class="answer"><p>Odpowiedzi:</p>
 		
 			<ul id="list">
