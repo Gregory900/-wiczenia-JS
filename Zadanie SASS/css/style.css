@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgb(205, 5, 142);
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: rgb(205, 5, 142);
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: rgb(205, 5, 142);
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+.odd {
+  background-color: rgb(19, 200, 223);
+}
+
+.even {
+  background-color: rgb(26, 126, 239);
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+  margin: 30px auto 30px auto;
+  border: 3px solid yellow;
+  border-radius: 50%;
+}
+
+section {
+  height: 25vh;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
