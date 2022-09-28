@@ -1,0 +1,27 @@
+body {
+  background-color: aqua;
+}
+
+li:nth-child(even) {
+  color: red;
+}
+
+span:first-of-type {
+  color: rgb(158, 175, 5);
+}
+
+.title {
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.title:hover {
+  color: violet;
+}
+
+.test p:first-child {
+  color: rgb(156, 156, 19);
+}
+.test p:last-child {
+  color: rgb(26, 10, 147);
+}/*# sourceMappingURL=style.css.map */
