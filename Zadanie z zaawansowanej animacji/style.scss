@@ -1,0 +1,271 @@
+body{
+    background-color: rgb(131, 193, 224);
+    margin:0;
+}
+
+.sky{
+    background-color: royalblue;
+    width:100%;
+    height: 60vh;
+    position: relative;
+    animation: sky 7s linear infinite alternate;
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    position:absolute;
+    top:50px;
+    left: 50px;
+    box-shadow: 0 0 60px yellow;
+    animation: sun 7s linear infinite alternate;
+}
+
+.ground{
+    background-color: rgb(49, 45, 45);
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+.grass{
+    background-color: lime;
+    width: 100%;
+    height: 200px;
+}
+
+.road{
+    background-color: gray;
+    position: absolute;
+    top:30px;
+    width: 100%;
+    height: 120px;
+}
+
+.car{
+    background-color: tomato;
+    width: 170px;
+    height: 70px;
+    position: absolute;
+    top:-10px;
+    left:250px;
+    border-radius: 15px;
+    animation: car 8s linear infinite;
+}
+
+.car::after, .car::before{
+    content: '';
+    background-color: tomato;
+    position: absolute;
+    width:40px;
+    height: 35px;
+    bottom: 0;
+}
+
+.car::after{
+left:-22px;
+}
+
+.car::before{
+    right:-24px;
+    border-top-right-radius: 10px;
+}
+
+.wheel{
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -14px;
+    z-index: 100;
+    border: 3px dashed gray;
+    animation: wheel 2s linear infinite;
+}
+
+.frontwheel{
+    right:3px;
+}
+
+.backwheel{
+    right:125px;
+}
+
+.window{
+    background-color: rgb(42, 42, 241);
+    width: 55px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+}
+
+.frontwindow{
+    right:0;
+    border-top-right-radius: 10px;
+}
+
+.backwindow{
+    left:0;
+    border-top-left-radius: 6px;
+}
+
+.clouds{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(210, 214, 218);
+    box-shadow: 0 0 13px rgb(210, 214, 218);
+}
+
+.first{
+    position: absolute;
+    left:400px;
+    top:60px;  
+    animation: clouds1 10s linear infinite;
+}
+
+.second{
+    position: absolute;
+    left:800px;
+    top:250px;  
+    animation: clouds2 10s linear infinite;
+}
+
+.third{
+    position: absolute;
+    left:1200px;
+    top:140px;
+    animation: clouds3 11s linear infinite;  
+}
+
+.first::after, .first::before{
+    content: '';
+    background-color: rgb(210, 214, 218);
+    position: absolute;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 13px rgb(210, 214, 218);
+}
+
+.first::after{
+    left:-33px;
+}
+
+.first::before{
+    right:-33px;
+}
+
+.second::after, .second::before{
+    content: '';
+    background-color: rgb(210, 214, 218);
+    position: absolute;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 13px rgb(210, 214, 218);;
+}
+
+.second::after{
+    left:-33px;
+}
+
+.second::before{
+    right:-33px;
+}
+
+.third::after, .third::before{
+    content: '';
+    background-color: rgb(210, 214, 218);
+    position: absolute;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 13px rgb(210, 214, 218);;
+}
+
+.third::after{
+    left:-33px;
+}
+
+.third::before{
+    right:-33px;
+}
+
+
+@keyframes sky{
+    0%{
+        background-color: rgb(1, 12, 44);
+    }
+    40%{
+        background-color: royalblue;
+    }
+    60%{
+        background-color: royalblue;
+    }
+    100%{
+        background-color: rgb(1, 12, 44);
+    }
+}
+
+@keyframes sun{
+    0%{
+        top:480px;
+    }
+    40%{
+        top:50px;
+    }
+    60%{
+        top:50px;
+    }
+    100%{
+        top: 480px;
+    }
+}
+
+@keyframes car{
+    from{
+        left:-200px;
+    }
+    to{
+        left: 1600px;
+    }
+}
+
+@keyframes wheel{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes clouds1{
+    from{
+        left:2000px;
+    }
+    to{
+        left: -200px;
+    }
+}
+
+@keyframes clouds2{
+    from{
+        left: 1700px;
+    }
+    to{
+        left: -500px;
+    }
+}
+
+@keyframes clouds3{
+    from{
+        left: 1600px;
+    }
+    to{
+        left: -800px;
+    }
+}
