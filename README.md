@@ -7,4 +7,4 @@
 
 <b>--> Folder Gra-przesuwanie puzzli</b> to stronka, gdzie należy kliknać na puzzel, aby zmienić go z "wolnym" miejscami. Jest to projekt oparty w dużej mierze na tutorialu, ale ubogacony o pewne elementy, jak na przykład możliwość wyboru obrazka.
 
-<b>--> Odkrywane karty</b> to stronka gdzie po najechaniu na znak zapytania ukaże się opis poszczególnych postacji na ciemniejszym tle
+<b>--> Odkrywane karty</b> to stronka gdzie po najechaniu na znak zapytania ukaże się opis poszczególnych postaci na ciemniejszym tle
