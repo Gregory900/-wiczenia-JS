@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(10deg, #2483ff 60%, #2c6afb 60%);
+}
+
+nav {
+    margin-top: 80px;
+    background-color: #292929;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    font-size: 24px;
+}
+
+.menu-item{
+    display: inline-block;
+    line-height: 80px;
+    height:80px;
+    width:300px;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover{
+    background-color: #363636;
+    cursor: pointer;
+}
+
+.dropdown{
+    position: absolute;
+    width:300px;
+}
+
+.dropdown li{
+    background-color: #50515a;
+    transition: color 0.3s;
+    display: none;
+    opacity: 0;
+}
+
+.dropdown li:hover{
+    color: royalblue;
+}
+
+.menu-item:hover .dropdown li{
+    display: block;
+    animation: menu1 0.5s forwards;
+}
+
+.menu-item:hover .dropdown li:nth-child(2){
+    animation-delay: .2s;
+}
+
+.menu-item:hover .dropdown li:nth-child(3){
+    animation-delay: .4s;
+}
+
+.menu-item:hover .dropdown li:nth-child(4){
+    animation-delay: .6s;
+}
+
+.menu-item:hover .dropdown li:nth-child(5){
+    animation-delay: .8s;
+}
+
+.menu-item:hover .dropdown li:nth-child(6){
+    animation-delay: 1s;
+}
+
+@keyframes menu1{
+    from{
+        opacity: 0;
+        transform: rotate(36deg);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* -------------- */
+
+.two:hover .dropdown li{
+    display: block;
+    animation: menu2 0.5s forwards;
+}
+
+@keyframes menu2{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------------- */
+
+.three:hover .dropdown li{
+    display: block;
+    animation: menu3 .5s forwards;
+}
+
+@keyframes menu3{
+    from{
+        opacity: 0;
+        transform: translateX(60px) rotateY(-60deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0) rotateY(0);
+    }
+}
+
+/* ---------------- */
+
+.four:hover .dropdown li{
+    animation: menu4 .5s forwards;
+    transform-origin: top;
+}
+
+@keyframes menu4{
+    from{
+        opacity: 0;
+        transform: translateY(-40px) scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
