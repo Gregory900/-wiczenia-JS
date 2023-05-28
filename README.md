@@ -9,4 +9,4 @@
 
 <b>--> Odkrywane karty</b> to przykładowe elementy z różnymi efektami na karty na stronach internetowych
 
-<b>--> BEM karta </b> to karta z wykrozystaniem metodyki BEM
+<b>--> BEM karta </b> to karta z wykorzystaniem metodyki BEM
