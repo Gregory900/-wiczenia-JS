@@ -8,3 +8,5 @@
 <b>--> Folder Gra-przesuwanie puzzli</b> to stronka, gdzie należy kliknać na puzzel, aby zmienić go z "wolnym" miejscami. Jest to projekt oparty w dużej mierze na tutorialu, ale ubogacony o pewne elementy, jak na przykład możliwość wyboru obrazka.
 
 <b>--> Odkrywane karty</b> to przykładowe elementy z różnymi efektami na karty na stronach internetowych
+
+<b>--> BEM karta </b> to karta z wykrozystaniem metodyki BEM
